@@ -1,0 +1,51 @@
+.navlink a {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.navlink--close a {
+  font-size: 10px;
+  padding: 16px 0;
+  flex-direction: column;
+}
+
+.navlink a:hover {
+  background-color: rgba(51, 51, 51, 0.08);
+}
+
+.navlink__icon {
+  margin-right: 24px;
+  margin-left: 6px;
+}
+
+.navlink--close .navlink__icon {
+  margin: 0 auto;
+}
+
+.navlink__label {
+  color: #333;
+}
+
+.navlink--close a.active .navlink__label {
+  color: #f00;
+}
+
+.MuiSvgIcon-root {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.active {
+  font-weight: 500;
+  background-color: rgba(51, 51, 51, 0.15);
+}
+
+a.active:hover {
+  background-color: rgba(51, 51, 51, 0.3);
+}
+
+a.active .MuiSvgIcon-root {
+  color: #f00;
+}

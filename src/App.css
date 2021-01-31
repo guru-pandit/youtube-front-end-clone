@@ -1,0 +1,9 @@
+.app {
+  width: 100%;
+}
+
+.app__mainContent {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+}
