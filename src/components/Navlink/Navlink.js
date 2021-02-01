@@ -5,7 +5,7 @@ import "./Navlink.css";
 import { SidebarStateContext } from "@hooks/SidebarState/SidebarState";
 
 const Navlink = ({ path, label, Icon }) => {
-  const [isSidebarClose, setIsSidebarClose] = useContext(SidebarStateContext);
+  const [isSidebarClose] = useContext(SidebarStateContext);
 
   return (
     <div className={`navlink ${isSidebarClose ? "navlink--close" : null}`}>

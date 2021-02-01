@@ -4,7 +4,7 @@ import Badge from "@material-ui/core/Badge";
 import { VideoCall, Apps, Notifications } from "@material-ui/icons";
 import "./Buttons.css";
 
-function Buttons() {
+const Buttons = () => {
   return (
     <div className="buttons">
       <div className="buttons__icon">
@@ -29,6 +29,6 @@ function Buttons() {
       </div>
     </div>
   );
-}
+};
 
 export default Buttons;

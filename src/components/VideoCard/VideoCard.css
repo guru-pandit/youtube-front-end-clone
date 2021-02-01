@@ -1,0 +1,49 @@
+.videocard {
+  width: 23%;
+  margin-bottom: 32px;
+}
+
+.videocard__image {
+  width: 100%;
+}
+
+.videocard__image img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.videocard__info {
+  margin-top: 8px;
+  display: flex;
+  padding-bottom: 8px;
+}
+
+.videocard__avatar {
+  width: 36px;
+  height: 36px;
+}
+
+.videocard__avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.videocard__infoText {
+  flex: 1;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.videocard__infoText h3 {
+  font-size: 14px;
+  color: #030303;
+  line-height: 140%;
+  margin-bottom: 8px;
+}
+
+.videocard__infoText p {
+  font-size: 14px;
+  color: #606060;
+  line-height: 140%;
+}

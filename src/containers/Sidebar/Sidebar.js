@@ -16,7 +16,7 @@ import "./Sidebar.css";
 import { SidebarStateContext } from "@hooks/SidebarState/SidebarState";
 
 const Sidebar = () => {
-  const [isSidebarClose, setIsSidebarClose] = useContext(SidebarStateContext);
+  const [isSidebarClose] = useContext(SidebarStateContext);
 
   return (
     <div className={`sidebar ${isSidebarClose ? "sidebar--close" : null}`}>
@@ -44,6 +44,7 @@ const Sidebar = () => {
       {!isSidebarClose && (
         <Navlink label="Show More" path="/showmore" Icon={ExpandMore} />
       )}
+      {!isSidebarClose && <hr className="sidebar__divider" />}
     </div>
   );
 };

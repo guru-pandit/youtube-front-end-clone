@@ -1,4 +1,36 @@
 .main {
-  border: 1px solid red;
   flex: 1;
+  max-width: calc(100vw - 240px);
+  overflow: hidden;
+}
+
+.main--full {
+  max-width: calc(100vw - 72px);
+}
+
+.main__filter {
+  width: 100%;
+  overflow: scroll;
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.main__filter::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.main__filterlinks {
+  margin-top: 16px;
+  width: max-content;
+}
+
+.main__content {
+  background-color: #ededed;
+  padding-top: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
